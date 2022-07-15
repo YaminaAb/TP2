@@ -48,7 +48,7 @@ class ControllerDonateur{
         }else{      
             
             $errors = $validation->displayErrors();
-            return Twig::render('donateur-insert.php', ['errors'=> $errors]);
+            return Twig::render('donateur-insert.php', ['errors'=> $errors, 'donateur' => $_POST]);
         }
 
             
